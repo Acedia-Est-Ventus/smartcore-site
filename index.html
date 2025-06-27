@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartCore Technologies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1rem;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin-top: 0.5rem;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #111;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartCore Technologies</h1>
+    <p>Інтелект у кожному дотику</p>
+  </header>
+
+  <nav>
+    <a href="#home">Головна</a>
+    <a href="#products">Продукція</a>
+    <a href="#about">Про нас</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Ваша нова ера мобільності починається тут</h1>
+    <p>Передові технології. Надійний дизайн. Українське виробництво.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Наші моделі</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3c12f4b2" alt="SmartCore One">
+        <h3>SmartCore One</h3>
+        <p>Потужний процесор, стильний корпус, 64MP камера. Ціна: 12 999₴</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1495433324511-bf8e92934d90" alt="SmartCore Air">
+        <h3>SmartCore Air</h3>
+        <p>Ультратонкий дизайн, OLED-екран, автономність до 48 годин. Ціна: 15 499₴</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1574623452614-1e6b1f13c04b" alt="SmartCore Pro">
+        <h3>SmartCore Pro</h3>
+        <p>Флагманська модель із 5G та швидкою зарядкою. Ціна: 19 999₴</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Про компанію</h2>
+    <p>Ми створюємо інноваційні мобільні телефони з 2020 року. Наші пристрої поєднують стиль, потужність і зручність використання для кожного. SmartCore прагне зробити передові технології доступними кожному українцю.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Зв'яжіться з нами</h2>
+    <form>
+      <label for="name">Ваше ім’я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Надіслати</button>
+    </form>
+    <p>Email: info@smartcore.ua | Телефон: +380 (44) 123-45-67</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartCore Technologies. Всі права захищені.</p>
+  </footer>
+</body>
+</html>
